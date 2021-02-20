@@ -17,3 +17,10 @@ function unstyleText() {
         document.getElementById("textBox").style.textDecoration = "none";
     }
 }
+
+function mooFunction() {
+    document.getElementById("textBox").style.textTransform = "uppercase";
+    // var stuff = document.getElementById("textBox").value;
+    // var parts = stuff.split(" ");
+    // stuff = parts.join("_");
+}
