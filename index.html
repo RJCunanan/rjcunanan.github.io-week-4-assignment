@@ -13,9 +13,7 @@
 		<!-- UI controls -->
 		<fieldset>
 			<legend>Text</legend>
-			<textarea id="textBox" rows="4" cols="30" name="Text">
-				Sample Text...
-			</textarea>
+			<textarea id="textBox" rows="4" cols="30" name="Text">Sample Text...</textarea>
 		</fieldset>
 		
 		<fieldset>
@@ -24,11 +22,11 @@
 				<button type="button" onclick="makeTextLarger()">Bigger!</button>
 			</div>
 			<div>
-				<input type="radio" id="fancyShmancy" onchange="boldText()" name="radioButton">
+				<input type="radio" id="fancyShmancy" onchange="styleText()" name="radioButton">
 				<label for="fancyShmancy">FancyShmancy</label>
 			</div>
 			<div>
-				<input type="radio" id="boringBetty" onchange="unboldText()" name="radioButton">
+				<input type="radio" id="boringBetty" onchange="unstyleText()" name="radioButton">
 			<label for="boringBetty">BoringBetty</label>
 			</div>
 		</fieldset>
