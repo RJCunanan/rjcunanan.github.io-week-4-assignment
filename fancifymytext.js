@@ -1,8 +1,15 @@
 function makeTextLarger() {
-    // alert("Hello, world!");
     document.getElementById("textBox").style.fontSize="4em";
 }
 
-function test() {
-    alert("Hello World!")
+function boldText() {
+    if (document.getElementById("fancyShmancy").checked = true) {
+        document.getElementById("textBox").style.fontWeight = "bold";
+    }
+}
+
+function unboldText() {
+    if (document.getElementById("boringBetty").checked = true) {
+        document.getElementById("textBox").style.fontWeight = "normal";
+    }
 }
