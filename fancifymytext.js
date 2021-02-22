@@ -20,7 +20,13 @@ function unstyleText() {
 
 function mooFunction() {
     document.getElementById("textBox").style.textTransform = "uppercase";
-    // var stuff = document.getElementById("textBox").value;
-    // var parts = stuff.split(" ");
-    // stuff = parts.join("_");
+    var stuff = document.getElementById("textBox").value;
+    var parts = stuff.split(" ");
+    var characters = parts[parts.length - 1].split("");
+    if (characters[characters.length - 1] === ".") {
+        characters[characters.length - 1] = "-Moo.";
+    }
+    parts[parts.length - 1] = characters.join("");
+    stuff = parts.join(" ");
+    document.getElementById("textBox").value = stuff;
 }
